@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+ body{
+     min-height: 100vh;
+     background: var(--blue);
+     padding: 0px;
+     margin: 0px;
+     font-family:Montserrat ;
+}
+.container{
+     width: 700px;
+     padding: 100px;
+     padding-left: 250px;
+     background: rgb(143, 198, 143);
+}
+.title{
+     font-weight: 600;
+     text-align: center;
+     
+}
+.indicator{
+     width: 90%;
+     display: flex;
+     justify-content: space-between;
+     position: relative;
+     margin-bottom: 24px;
+}
+.indicator .line{
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     height: 4px;
+     background: #ddd;
+     width: 100%;
+     left: 0;
+     z-index: 10;
+     
+
+}
+.indicator .line span{
+     position: absolute;
+     height: 100%;
+     top: 0;
+     left: 0;
+     width: 0%;
+     background: var(--green);
+
+}
+
+     
+.indicator p{
+     position: relative;
+     z-index: 20;
+     width: 40px;
+     height: 40px;
+     border: 4px solid #ddd;
+     background: #fff;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-weight: 600;
+     border-radius: 50%;
+     transition: 3s;
+}
+.indicator p.active{
+border-color: var(--green);
+color: var(--green);
+}
+
+.forms .form{
+     margin-bottom: 5px;
+     width: 200%;
+}
+.form input{
+     
+     width: 100%;
+     padding: 10px;
+     border: 0px solid #ccc;
+     border-radius: 7px;
+     outline: none;
+}
+  /* .btn button {
+     align-items: center;
+     justify-content: center;
+     
+} */
+.btn2{
+       display: flex;
+       flex-direction: row;  
+      margin-left: 10px; 
+     margin-top: 100px;
+     justify-content: space-evenly;
+}
+.btn3{
+      display: flex; 
+     margin-top: 100px;
+     
+}
+button{
+     padding: 10px 30px;
+     color: white;
+     background-color: rgba(112, 72, 135, 0.54);
+     margin-left: 290px;
+     cursor: pointer;
+     border-radius: 5px;
+}
+.section1 .paragraphe{
+     align-items: center;
+}
+
+.section1{
+     
+     margin: 20px;
+}
+.section1 .container{
+     display: flex;
+     justify-content: center;
+}
+.section-1 .container .left{
+     background:rgb(253, 205, 142);
+     flex: 30px;
+}
+.section-1 .container .left img{
+     width: auto;
+     min-height: auto;    
+}
+.section-1 .container .right{
+     flex: 50px;
+     padding: 20px;
+}
+.section-1 .container .right h3{
+
+}
+
+
+.forms{
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     border-style: none;
+}
+
+
+@media screen and (max-width: 400px){
+    section .container{
+          display: flex;
+          flex-direction: column;
+     }
+  .section1 .container .right .formulaire .forms{
+     display: flex;
+flex-direction: column;
+width: 300px;
+ } 
+ .indicator {
+     width: 250px
+ }
+ .section1 .paragraphe{
+     margin-left: 50px
+ }
+ .title{
+     margin-left: -800px;
+ }
+ /* .section2 .form input{
+     width: 50px;
+ }
+ .section2 .container .{
+     display: ;
+ }  */
+ /* .section3{
+     flex-direction: column;
+ } */
+
+}
